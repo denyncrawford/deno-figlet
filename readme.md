@@ -77,7 +77,7 @@ This project is 100% OpenSource, so you can help me with:
 
 # :pushpin: Of Interest
 
-This module is builded for the Mantra CLI, Mantra is the first Front-End agnostic CMS framework and also the first CMS on builded on Deno - [Check it out](https://github.com/mantra-cms)
+This module is built for the Mantra CLI, Mantra is the first Front-End agnostic CMS framework and also the first CMS on builded on Deno - [Check it out](https://github.com/mantra-cms)
 
 Written By [Crawford.](https://github.com/denyncrawford).
 
