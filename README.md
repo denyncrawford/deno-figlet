@@ -91,6 +91,8 @@ This project is 100% OpenSource, so you can help me with:
 
 - **If you are brave enough to write/port/add your own font, go ahead and make a PR.**
 
+    > If you want to make your own fonts quickly and easily, check this [awesome FIGlet font editor](http://patorjk.com/figlet-editor/#/edit) and say goodbye to the handmade stuff.
+
   - **Once you have your font ready to go**:
 
     - Put the `font-file-name.flf` into the `./src/fonts/`
