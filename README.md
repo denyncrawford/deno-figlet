@@ -63,7 +63,7 @@ textCB("Deno is Awesome.", "doom", null, (myAwesomeFiglet) => {
 
 You will get an awesome Doom Figlet :heart: :gun:.
 
-## Tests
+## 🧪 Testing
 
 - **Basic usage**:
 
@@ -72,7 +72,7 @@ deno run -A https://raw.githack.com/denyncrawford/deno-figlet/master/mod_test.js
 
 ```
 
-- **Colors**:
+- **Colors (working with other library)**:
 
 ```bash
 deno run -A https://raw.githack.com/denyncrawford/deno-figlet/master/colors_test.js
