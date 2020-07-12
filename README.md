@@ -63,6 +63,24 @@ textCB("Deno is Awesome.", "doom", null, (myAwesomeFiglet) => {
 
 You will get an awesome Doom Figlet :heart: :gun:.
 
+## Tests
+
+- **Basic usage**:
+
+```bash
+deno run -A https://raw.githack.com/denyncrawford/deno-figlet/mod_test.js
+
+```
+
+- **Colors**:
+
+```bash
+deno run -A https://raw.githack.com/denyncrawford/deno-figlet/colors_test.js
+
+```
+
+> **Notice**: Colors provided by the Deno [ansi_styles](https://deno.land/x/ansi_styles) module.
+
 ## :crown: Contributing
 
 This project is 100% OpenSource, so you can help me with:
@@ -76,6 +94,8 @@ This project is 100% OpenSource, so you can help me with:
     - Check if the bundle is ok on `./dist/fonts/_font.flf`
 
   - **Then commit and make a PR**.
+
+   >**NOTICE**: You should not play with the bundler, it can damage your data. 
 
 - **Bug Report**.
 - **Ideas and contributing in general** 
@@ -110,7 +130,7 @@ Written By [Crawford.](https://github.com/denyncrawford).
 
 ---
 
-## Support this project by donating on:
+# Support this project by donating on:
 
 - [Paypal](https://paypal.me/DENYNCRAWFORD?locale.x=en_US).
 - BTC address: 39ik7oyYvmiMeTXTscY3bb9rUFMHdjf5pd
