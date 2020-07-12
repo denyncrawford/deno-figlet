@@ -18,7 +18,7 @@ If you want to know more about how a Figlet font is built, please check out [the
 ## :inbox_tray: Importing 
 
 ```javascript
-import filget from 'https:/deno.land/x/node-figlet/mod.js'
+import filget from 'https:/deno.land/x/deno-figlet/mod.js'
 ```
 
 ## :wrench: Basic Usage:
