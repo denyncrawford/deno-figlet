@@ -8,8 +8,8 @@ export default async (string, dictionary, cb) => {
   });
 
   let maxLength = 0;
-  initial.forEach(arrLetra => {
-    maxLength = arrLetra.length > maxLength ? arrLetra.length : maxLength;
+  initial.forEach(letterArr => {
+    maxLength = letterArr.length > maxLength ? letterArr.length : maxLength;
   }); 
 
   let output = [];
