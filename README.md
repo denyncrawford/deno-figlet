@@ -89,15 +89,16 @@ This project is 100% OpenSource, so you can help me with:
 
   - **Once you have your font ready to go**:
 
-    - Put the font.flf into the `./src/fonts/`
+    - Put the you-font.flf into the `./src/fonts/`
     - Perform the bundle with `deno run -A ./lib/fontBundler.js`
-    - Check if the bundle is ok on `./dist/fonts/_font.flf`
+    - Check if the bundle is ok on `./dist/fonts/_your_font.flf`
 
   - **Then commit and make a PR**.
 
    >**NOTICE**: You should not play with the bundler, it can damage your data. 
 
 - **Bug Report**.
+
 - **Ideas and contributing in general** 
 
 ## :pencil: TO DO
@@ -113,7 +114,7 @@ This project is 100% OpenSource, so you can help me with:
 - You can now import the fonts separately to play with them however you want.
 
     ```javascript
-    import { fontName } from 'https:/deno.land/x/deno-figlet/dist/fonts/mod.js'
+    import { _font_name } from 'https:/deno.land/x/deno-figlet/dist/fonts/mod.js'
     ```
 
     **OR**
@@ -124,7 +125,7 @@ This project is 100% OpenSource, so you can help me with:
 
 # :pushpin: Of Interest
 
-This module is built for the Mantra CLI, Mantra is the first Front-End agnostic CMS framework and also the first CMS on built on Deno - [Check it out](https://github.com/mantra-cms)
+This module is built for the Mantra CLI, Mantra is the first Front-End agnostic CMS framework and also the first CMS built on Deno - [Check it out](https://github.com/mantra-cms)
 
 Written By [Crawford.](https://github.com/denyncrawford).
 
