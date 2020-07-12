@@ -23,7 +23,7 @@ import filget from 'https:/deno.land/x/node-figlet/mod.js'
 
 ## :wrench: Basic Usage:
 
-**Deno-Figlet** exports by default the quick method wich runs without specifiying the font or ditctionary preset.
+**Deno-Figlet** exports by default the quick method wich runs without specifiying any font or ditctionary preset.
 
 ```javascript
 let myAwesomeFiglet = await figlet("Deno is Awesome.")
@@ -39,7 +39,7 @@ console.log(myAwesomeFiglet)
  	|____/   \___| |_| |_|  \___/   |_| |___/   \__,_|   \_/\_/    \___| |___/  \___/  |_| |_| |_|  \___| (_)
 
 
-You can also import the methods text and textCB if you want to select the font and/or set a custom dictionary.
+You can also import the methods `text` and `textCB` if you want to select the font and/or set a custom dictionary.
 
 ```javascript
 import filget, { text, textCB } from 'https:/deno.land/x/deno-figlet/mod.js'
@@ -85,27 +85,30 @@ deno run -A https://raw.githack.com/denyncrawford/deno-figlet/master/colors_test
 
 This project is 100% OpenSource, so you can help me with:
 
-- **If you are brave enough to write your own font, go ahead and make a PR.**
-
-  - **Once you have your font ready to go**:
-
-    - Put the you-font.flf into the `./src/fonts/`
-    - Perform the bundle with `deno run -A ./lib/fontBundler.js`
-    - Check if the bundle is ok on `./dist/fonts/_your_font.flf`
-
-  - **Then commit and make a PR**.
-
-   >**NOTICE**: You should not play with the bundler, it can damage your data. 
-
 - **Bug Report**.
 
 - **Ideas and contributing in general** 
+
+- **If you are brave enough to write/port/add your own font, go ahead and make a PR.**
+
+  - **Once you have your font ready to go**:
+
+    - Put the `font-file-name.flf` into the `./src/fonts/`
+    - Perform the bundle with `deno run -A ./lib/fontBundler.js`
+    - Check if the bundle is ok on `./dist/fonts/_font_file_name.flf`
+
+  - **Then commit and make the PR**.
+
+   >**NOTICE**: You should not play with the bundler, it can damage your data. 
 
 ## :pencil: TO DO
 
 - Chainable text on methods.
 - More than one spacebar. not:(trim).
 - SyncText method.
+- Available font list.
+- Dictionary Documentation.
+- How to: Make your own dictionary preset.
 
 ## :clipboard: Changes
 
