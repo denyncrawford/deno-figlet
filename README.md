@@ -59,7 +59,7 @@ textCB("Deno is Awesome.", "doom", null, (myAwesomeFiglet) => {
 })
 
 ```
-You will get an awesome Star Wars figlet :heart: :gun:.
+You will get an awesome Doom Figlet :heart: :gun:.
 
 ## :crown: Contributing
 
