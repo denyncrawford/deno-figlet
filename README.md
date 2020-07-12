@@ -5,11 +5,11 @@
     /_____/  \___/ /_/ /_/ \____/        /_/       /_/    \__, /  /_/   \___/ \__/  
                                                          /____/                     
 
-**Deno-Figlet** is a JavaScript/Typescript implementation of a FIGfont driver builded and available for Deno 🦕 (Soon browser availability).
+**Deno-Figlet** is a JavaScript/Typescript implementation of a FIGfont driver built and available for Deno 🦕 (Soon browser availability).
 
 [Figlet](http://www.figlet.org/) is a program for making large letters out of ordinary text.
 
-If you want to know more about how a Figlet font is builded, please check out [the FIGfont documentation](http://www.jave.de/figlet/figfont.html).
+If you want to know more about how a Figlet font is built, please check out [the FIGfont documentation](http://www.jave.de/figlet/figfont.html).
 
 > **Notice:** All the fonts in this package are not my property, all credits to their creators (if you want to know who created a font, you can look inside each font).
 
@@ -104,7 +104,7 @@ This project is 100% OpenSource, so you can help me with:
 
 # :pushpin: Of Interest
 
-This module is builded for the Mantra CLI, Mantra is the first Front-End agnostic CMS framework and also the first CMS on builded on Deno - [Check it out](https://github.com/mantra-cms)
+This module is built for the Mantra CLI, Mantra is the first Front-End agnostic CMS framework and also the first CMS on built on Deno - [Check it out](https://github.com/mantra-cms)
 
 Written By [Crawford.](https://github.com/denyncrawford).
 
