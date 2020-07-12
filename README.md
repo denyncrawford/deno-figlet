@@ -18,7 +18,7 @@ If you want to know more about how a Figlet font is builded, please check out [t
 ## :inbox_tray: Importing 
 
 ```javascript
-import filget from 'https:/deno.land/x/node-figlet.js'
+import filget from 'https:/deno.land/x/node-figlet/mod.js'
 ```
 
 ## :wrench: Basic Usage:
@@ -42,12 +42,13 @@ console.log(myAwesomeFiglet)
 You can also import the methods text and textCB if you want to select the font and/or set a custom dictionary.
 
 ```javascript
-import filget, { text, textCB } from 'https:/deno.land/x/deno-figlet.js'
+import filget, { text, textCB } from 'https:/deno.land/x/deno-figlet/mod.js'
 
 let myAwesomeFiglet = await text("Deno is Awesome.","starwars")
 console.log(myAwesomeFiglet)
 
 ```
+
 You will get an awesome Star Wars figlet :wink: :rocket:.
 
 For the ones who likes the NodeJS figlet API you can use textCB, wich gets the same results on first param into a callback function:
@@ -59,21 +60,47 @@ textCB("Deno is Awesome.", "doom", null, (myAwesomeFiglet) => {
 })
 
 ```
+
 You will get an awesome Doom Figlet :heart: :gun:.
 
 ## :crown: Contributing
 
 This project is 100% OpenSource, so you can help me with:
 
-- If you are brave enough to write your own font, go ahead and make a PR.
-- Bug Report.
-- Ideas and gerneal PR's 
+- **If you are brave enough to write your own font, go ahead and make a PR.**
+
+  - **Once you have your font ready to go**:
+
+    - Put the font.flf into the `./src/fonts/`
+    - Perform the bundle with `deno run -A ./lib/fontBundler.js`
+    - Check if the bundle is ok on `./dist/fonts/_font.flf`
+
+  - **Then commit and make a PR**.
+
+- **Bug Report**.
+- **Ideas and contributing in general** 
 
 ## :pencil: TO DO
 
-- Cahainable text on methods.
+- Chainable text on methods.
 - More than one spacebar. not:(trim).
 - SyncText method.
+
+## :clipboard: Changes
+
+- Now the deno-figlet comes with a font bundler to parse all fonts into ESM modules. It makes importing and manipulating them a lot easier, but the fonts must still be written in FIGfont format.
+
+- You can now import the fonts separately to play with them however you want.
+
+    ```javascript
+    import { fontName } from 'https:/deno.land/x/deno-figlet/dist/fonts/mod.js'
+    ```
+
+    **OR**
+
+    ```javascript
+    import font from 'https:/deno.land/x/deno-figlet/dist/fonts/_font_name.js'
+    ```
 
 # :pushpin: Of Interest
 
