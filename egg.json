@@ -3,7 +3,7 @@
   "description": "A Deno :sauropod: Figlet from text generator",
   "stable": true,
   "entry": "./mod.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": "https://github.com/denyncrawford/deno-figlet",
   "files": [
     "./mod.js",
