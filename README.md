@@ -79,7 +79,7 @@ deno run -A https://raw.githack.com/denyncrawford/deno-figlet/master/colors_test
 
 ```
 
-> **Notice**: Colors provided by the Deno [ansi_styles](https://deno.land/x/ansi_styles) module.
+> **Notice**: Colors are provided by the Deno [ansi_styles](https://deno.land/x/ansi_styles) module.
 
 ## :crown: Contributing
 
@@ -95,11 +95,11 @@ This project is 100% OpenSource, so you can help me with:
 
     - Put the `font-file-name.flf` into the `./src/fonts/`
     - Perform the bundle with `deno run -A ./lib/fontBundler.js`
-    - Check if the bundle is ok on `./dist/fonts/_font_file_name.flf`
+    - Check if the bundle is ok at `./dist/fonts/_font_file_name.js`
 
   - **Then commit and make the PR**.
 
-   >**NOTICE**: You should not play with the bundler, it can damage your data. 
+   >**NOTICE**: You should not play with the bundler file, it can damage your data. 
 
 ## :pencil: TO DO
 
@@ -109,10 +109,11 @@ This project is 100% OpenSource, so you can help me with:
 - Available font list.
 - Dictionary Documentation.
 - How to: Make your own dictionary preset.
+- How to: Font usage markup.
 
 ## :clipboard: Changes
 
-- Now the deno-figlet comes with a font bundler to parse all fonts into ESM modules. It makes importing and manipulating them a lot easier, but the fonts must still be written in FIGfont format.
+- Now the deno-figlet mod comes with a font bundler to parse all fonts into ESM modules. It makes importing and manipulating them a lot easier, but the fonts must still be written in FIGfont format.
 
 - You can now import the fonts separately to play with them however you want.
 
