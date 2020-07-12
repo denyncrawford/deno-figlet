@@ -1,0 +1,16 @@
+{
+  "name": "deno-figlet",
+  "description": "A Deno :sauropod: Figlet from text generator",
+  "stable": true,
+  "entry": "./mod.js",
+  "version": "0.0.3",
+  "repository": "https://github.com/denyncrawford/deno-figlet",
+  "files": [
+    "./mod.js",
+    "./dist/fonts/*",
+    "README.md",
+    "./mod_test.js",
+    "./colors_test.js",
+    "./deps/*"
+  ]
+}
