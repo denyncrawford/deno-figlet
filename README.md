@@ -68,14 +68,14 @@ You will get an awesome Doom Figlet :heart: :gun:.
 - **Basic usage**:
 
 ```bash
-deno run -A https://raw.githack.com/denyncrawford/deno-figlet/mod_test.js
+deno run -A https://raw.githack.com/denyncrawford/deno-figlet/master/mod_test.js
 
 ```
 
 - **Colors**:
 
 ```bash
-deno run -A https://raw.githack.com/denyncrawford/deno-figlet/colors_test.js
+deno run -A https://raw.githack.com/denyncrawford/deno-figlet/master/colors_test.js
 
 ```
 
