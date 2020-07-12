@@ -146,4 +146,4 @@ MIT License
 
 Copyright (c) Crawford.
 
-[Full license](https://github.com/denyncrawford/deno-figlet/blob/master/LICENSE)
+[Full license](https://github.com/denyncrawford/deno-figlet/blob/master/LICENSE.md)
