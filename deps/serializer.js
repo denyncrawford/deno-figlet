@@ -44,10 +44,6 @@ export default async (ctx, customDict, cb) => {
       [item.letter]: item.ascii
     }), {});
 
-    
-    for (let i = 0; i < height; i++) {
-
-    }    
 
     serialized["©"] = createSpace(height)
     
