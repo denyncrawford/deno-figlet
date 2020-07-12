@@ -72,7 +72,7 @@ deno run -A https://raw.githack.com/denyncrawford/deno-figlet/master/mod_test.js
 
 ```
 
-- **Colors (working with other library)**:
+- **Colors (working with another library)**:
 
 ```bash
 deno run -A https://raw.githack.com/denyncrawford/deno-figlet/master/colors_test.js
