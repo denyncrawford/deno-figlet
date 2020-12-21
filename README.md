@@ -20,7 +20,7 @@ If you want to know more about how a Figlet font is built, please check out [the
 ## :inbox_tray: Importing 
 
 ```javascript
-import filget from 'https://x.nest.land/deno-figlet@0.0.5/mod.js'
+import figlet from 'https://x.nest.land/deno-figlet@0.0.5/mod.js'
 ```
 
 ## :wrench: Basic Usage:
