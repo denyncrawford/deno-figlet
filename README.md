@@ -102,6 +102,33 @@ This project is 100% OpenSource, so you can help me with:
 
   - **Then commit and make the PR**.
 
+## Nice To Know
+
+This is a reminder that this library contains fonts dumped from internet, some of the may not be compatible with the default dictionary or it is not well formatted to work with the method that we use to extract the font from the file. So please expect some fonts to be broken with isues like:
+
+- Missing characters or capitalized letters.
+- Broken config header.
+- Mismatching letters with the default dictionary.
+
+If you want to fix fonts you can edit them as described in the contributing section. By now I'm not fixing them since this is a small project and i have no time too look and fix into each file.
+
+Maybe, i will add some validations in the bundler to exclude fonts that won't pass the default dictionary.
+
+## Dictionaries
+
+Dictionaries are arrays of characters in specific order that will match the characters placed in a font file. By default this library uses a custom dictionary that matches almost all fonts in this repository, but some custom fonts may not work with the default dictionary, so you have to make sure your font does.
+
+If the font you're using doesn't match the default dictionary you can always pass a custom one to the exported methods of this module.
+
+### How to create a custom dictionary
+
+To create a custom dictionary you need to check the order of the characters in the target font file, then you must pass an array to the desired method for generating the text, this is an example of a dictionary:
+
+```typescript
+const dictionary = ['A', 'B', 'C', ...];
+const figlet = text('Hello World.', 'starwars', dictionary);
+```
+
 ## :pencil: TO DO
 
 - Chainable text on methods.
@@ -109,9 +136,9 @@ This project is 100% OpenSource, so you can help me with:
 - SyncText method. (Done)
 - Available font list (autocompletion types). (Done)
 - Multiline. (Done)
-- Dictionary Documentation.
-- How to: Make your own dictionary preset.
-- How to: Font usage markup.
+- Dictionary Documentation (Done)
+- How to: Make your own dictionary preset. (Done)
+- How to: Font usage markup. (Done)
 
 ## :clipboard: Changes
 

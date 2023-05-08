@@ -3,6 +3,8 @@ import { IFontDictionary } from "./types.ts";
 export const factory = (text: string, dictionary: IFontDictionary) => {
   const string = text.replaceAll(" ", "©").split("");
 
+  console.log(dictionary)
+
   const parsed: string[][] = [];
 
   string.forEach((letter) => {
