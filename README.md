@@ -20,7 +20,7 @@ If you want to know more about how a Figlet font is built, please check out [the
 ## :inbox_tray: Importing 
 
 ```javascript
-import figlet from 'https://x.nest.land/deno-figlet@0.0.5/mod.js'
+import figlet from 'https://de o.land/x/deno_figlet/mod.ts'
 ```
 
 ## :wrench: Basic Usage:
@@ -44,7 +44,7 @@ console.log(myAwesomeFiglet)
 You can also import the methods `text` and `textCB` if you want to select the font and/or set a custom dictionary.
 
 ```javascript
-import filget, { text, textCB } from 'https://x.nest.land/deno-figlet@0.0.5/mod.js'
+import filget, { text, textCB } from 'https://deno.land/x/deno_figlet/mod.ts'
 
 let myAwesomeFiglet = await text("Deno is Awesome.","starwars")
 console.log(myAwesomeFiglet)
@@ -70,7 +70,7 @@ You will get an awesome Doom Figlet :heart: :gun:.
 - **Basic usage**:
 
 ```bash
-deno run -A https://deno.land/deno_figlet/examples/starwars.ts
+deno run -A https://deno.land/x/deno_figlet/examples/starwars.ts
 ```
 
 - **Colors (working with another library)**:
@@ -104,15 +104,15 @@ This project is 100% OpenSource, so you can help me with:
 
 ## Nice To Know
 
-This is a reminder that this library contains fonts dumped from internet, some of the may not be compatible with the default dictionary or it is not well formatted to work with the method that we use to extract the font from the file. So please expect some fonts to be broken with isues like:
+This is a reminder that this library contains fonts dumped from internet, some of them may not be compatible with the default dictionary or it is not well formatted to work with the method that we use to extract the font from the files. So please expect some fonts to be broken with issues like:
 
 - Missing characters or capitalized letters.
 - Broken config header.
 - Mismatching letters with the default dictionary.
 
-If you want to fix fonts you can edit them as described in the contributing section. By now I'm not fixing them since this is a small project and i have no time too look and fix into each file.
+If you want to fix fonts you can edit them as described in the contributing section. By now I'm not fixing them since this is a small project and I have no time too look and fix into each file.
 
-Maybe, i will add some validations in the bundler to exclude fonts that won't pass the default dictionary.
+> Maybe, i will add some validations in the bundler to exclude fonts that won't pass the default dictionary.
 
 ## Dictionaries
 
@@ -149,13 +149,13 @@ const figlet = text('Hello World.', 'starwars', dictionary);
 - You can now import the fonts separately to play with them however you want.
 
     ```javascript
-    import { _font_name } from 'https://deno.land/deno_figlet/dist/fonts/mod.ts'
+    import { _font_name } from 'https://deno.land/x/deno_figlet/dist/fonts/mod.ts'
     ```
 
     **OR**
 
     ```javascript
-    import font from 'https://deno.land/deno_figlet/dist/fonts/_font_name.ts'
+    import font from 'https://deno.land/x/deno_figlet/dist/fonts/_font_name.ts'
     ```
   > Note: You don't need to import fonts manually for using this module, this information is only for developers.
 
