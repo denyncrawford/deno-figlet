@@ -65,18 +65,18 @@ textCB("Deno is Awesome.", "doom", null, (myAwesomeFiglet) => {
 
 You will get an awesome Doom Figlet :heart: :gun:.
 
-## 🧪 Testing
+## 🧪 Examples
 
 - **Basic usage**:
 
 ```bash
-deno run -A https://x.nest.land/deno-figlet@0.0.5/mod_test.js
+deno run -A https://deno.land/deno_figlet/examples/starwars.ts
 ```
 
 - **Colors (working with another library)**:
 
 ```bash
-deno run -A https://x.nest.land/deno-figlet@0.0.5/colors_test.js
+deno run -A https://deno.land/x/deno_figlet/examples/colors.ts
 ```
 
 > **Notice**: Colors are provided by the Deno [ansi_styles](https://deno.land/x/ansi_styles) module.
@@ -96,51 +96,43 @@ This project is 100% OpenSource, so you can help me with:
   - **Once you have your font ready to go**:
 
     - Put the `font-file-name.flf` into the `./src/fonts/`
-    - Perform the bundle with `deno run -A ./lib/fontBundler.js`
+    - Perform the bundle with `deno run -A ./src/scripts/fontBundler.js`
     - Check if the bundle is ok at `./dist/fonts/_font_file_name.js`
+    - Check if type is correctly generated
 
   - **Then commit and make the PR**.
-
-   >**NOTICE**: You should not play with the bundler file, it can damage your data. 
 
 ## :pencil: TO DO
 
 - Chainable text on methods.
-- More than one spacebar. not:(trim).
-- SyncText method.
-- Available font list.
+- More than one space. (Done)
+- SyncText method. (Done)
+- Available font list (autocompletion types). (Done)
+- Multiline. (Done)
 - Dictionary Documentation.
 - How to: Make your own dictionary preset.
 - How to: Font usage markup.
 
 ## :clipboard: Changes
 
-- Now the deno-figlet mod comes with a font bundler to parse all fonts into ESM modules. It makes importing and manipulating them a lot easier, but the fonts must still be written in FIGfont format.
+- Now it supports multiline text and multiple spaces for text.
+
+- Now the deno-figlet module comes with a font bundler to parse all fonts into ESM modules it also generates types for IDE autocompletion. It makes importing and manipulating them a lot easier at production time, but the fonts must still be written in FIGfont format inside the src folder.
 
 - You can now import the fonts separately to play with them however you want.
 
     ```javascript
-    import { _font_name } from 'https://x.nest.land/deno-figlet@0.0.5/dist/fonts/mod.js'
+    import { _font_name } from 'https://deno.land/deno_figlet/dist/fonts/mod.ts'
     ```
 
     **OR**
 
     ```javascript
-    import font from 'https://x.nest.land/deno-figlet@0.0.5/dist/fonts/_font_name.js'
+    import font from 'https://deno.land/deno_figlet/dist/fonts/_font_name.ts'
     ```
-
-# :pushpin: Of Interest
-
-This module is built for the Mantra CLI, Mantra is the first Front-End agnostic CMS framework and also the first CMS built on Deno - [Check it out](https://github.com/mantra-cms)
+  > Note: You don't need to import fonts manually for using this module, this information is only for developers.
 
 Written By [Crawford.](https://github.com/denyncrawford).
-
----
-
-# Support this project by donating on:
-
-- [Paypal](https://paypal.me/DENYNCRAWFORD?locale.x=en_US).
-- BTC address: 39ik7oyYvmiMeTXTscY3bb9rUFMHdjf5pd
 
 # :scroll: License
 
